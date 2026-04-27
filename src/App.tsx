@@ -379,7 +379,7 @@ export default function App() {
   }, [nextSlide, prevSlide]);
 
   return (
-    <div className="h-screen w-screen bg-vedapen-deep overflow-hidden relative selection:bg-vedapen-orange selection:text-vedapen-deep flex flex-col">
+    <div className="min-h-[100dvh] w-screen bg-vedapen-deep overflow-hidden relative selection:bg-vedapen-orange selection:text-vedapen-deep flex flex-col">
       {/* Background Decor */}
       <div className="absolute top-[-20%] right-[-10%] w-[60%] h-[60%] bg-vedapen-orange/5 rounded-full blur-[160px] pointer-events-none" />
       <div className="absolute bottom-[-10%] left-[-10%] w-[40%] h-[40%] bg-vedapen-orange/5 rounded-full blur-[80px] pointer-events-none" />
@@ -415,11 +415,11 @@ export default function App() {
       </main>
 
       {/* Navigation Controls */}
-      <div className="sticky bottom-0 left-0 w-full z-50 p-4 sm:p-8 flex items-center justify-between pointer-events-none">
+      <div className="fixed bottom-0 left-0 w-full z-[100] p-4 sm:p-8 flex items-center justify-between pointer-events-none">
         {/* Footer Info (Hidden on very small mobile) */}
         <div className="flex items-center gap-4 text-[8px] sm:text-[10px] font-mono text-teal-500 font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase opacity-60 md:opacity-100">
-          <span className="hidden xs:inline">Vedapen</span>
-          <span className="w-6 sm:w-10 h-[1px] bg-teal-800 hidden xs:inline" />
+          <span className="hidden sm:inline">Vedapen</span>
+          <span className="w-6 sm:w-10 h-[1px] bg-teal-800 hidden sm:inline" />
           <span>PU Strategy 2024</span>
         </div>
 
